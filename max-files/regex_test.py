@@ -22,6 +22,7 @@ context_list = re.findall(find_context, message, re.IGNORECASE)
 
 # nlp stuff
 filtered_context_sentences = []
+# a list that store all of sentences
 context_sentences = []
 stopwords = ["if","you","with","every","the","single","world","on","to","in","an","of","about","them","want","need","look","up"]
 for sentence in context_list:

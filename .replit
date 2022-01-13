@@ -1,2 +1,2 @@
 language = "bash"
-run = "python max-files/regex_test.py"
+run = "python3 max-files/regex_test.py"
