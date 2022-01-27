@@ -10,7 +10,7 @@ import re
 # directory, and saved as a string to the variable 'inferno':
 
 with open("inferno.txt") as file:
-    testString = file.read()
+    inferno = file.read()
 
 # print(inferno)
 
@@ -33,13 +33,13 @@ vowels = ["a", "e", "i", "o", "u", "à", "è", "ì", "ò", "ù", "ï", "é", "ó
 
 # test sentence:
 
-testString = "noi scusiamo il ragazzo, non sa cosa fa"
+# testString = "noi scusiamo il ragazzo, non sa cosa fa"
 
 # we want our output to look like:
 # .no.i. .scu.si.a.mo. .il. .ra.gaz.zo .non. .sa. .co.sa. .fa.
 
 # First: clean up our string, save it to a list:
-testList = re.sub("([^\w\s])","",testString).split();
+testList = re.sub("([^\w\s])","", inferno.lower()).split();
 
 
 print(testList)
