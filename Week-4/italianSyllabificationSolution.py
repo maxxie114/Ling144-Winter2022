@@ -42,7 +42,7 @@ vowels = ["a", "e", "i", "o", "u", "à", "è", "ì", "ò", "ù", "ï", "é", "ó
 
 # First: clean up our string, save it to a list:
 
-testList = inferno.lower().replace(",", "").replace("’", "").replace('"', "").replace("!", "").replace(".", "").replace(":", "").replace(";", "").split()
+testList = re.sub("([^\w\s])","",inferno.lower()).split();
 
 
 #print(testList)
